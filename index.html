@@ -151,6 +151,21 @@
             formMessage.style.color = "red";
         });
     }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const menu = document.querySelector(".nav-links");
+        const menuButton = document.createElement("button");
+        menuButton.innerHTML = "☰";
+        menuButton.classList.add("hamburger");
+        
+        document.querySelector("nav").appendChild(menuButton);
+        
+        menuButton.addEventListener("click", function () {
+            menu.classList.toggle("show");
+        });
+    });
+
+
     </script>
    
     

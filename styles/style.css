@@ -411,7 +411,17 @@ footer {
     }
     
     .text {
-        max-width: 80%;
+        max-width: 90%;
+    }
+
+    .profile-photo {
+        position: static;
+        margin: 20px auto;
+    }
+
+    .projects-container {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -419,21 +429,45 @@ footer {
     /* Navigation */
     nav {
         flex-direction: column;
+        align-items: center;
         text-align: center;
     }
-    
+
     .nav-links {
+        display: none; /* Hide menu initially */
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: lightblue;
+        padding: 15px 0;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 28px;
+        background: none;
+        border: none;
+        position: absolute;
+        right: 20px;
+        top: 15px;
     }
 
     /* Hero Section */
     .hero {
-        padding: 30px;
+        padding: 40px 20px;
     }
 
     .hero h1 {
-        font-size: 2.5em;
+        font-size: 2em;
     }
 
     .hero p {
@@ -441,24 +475,17 @@ footer {
     }
 
     .profile-photo {
-        width: 200px;
-        height: 280px;
-        margin-top: 20px;
-        position: static;
+        width: 180px;
+        height: auto;
     }
 
     /* Sections */
     #about, #contact, #skills {
-        padding: 100px 20px;
-    }
-
-    .projects-container {
-        flex-direction: column;
-        align-items: center;
+        padding: 80px 20px;
     }
 
     .project-card {
-        width: 90%;
+        width: 100%;
     }
 }
 
@@ -469,7 +496,7 @@ footer {
     }
 
     .hero h1 {
-        font-size: 2em;
+        font-size: 1.8em;
     }
 
     .hero p {
@@ -478,11 +505,11 @@ footer {
 
     .profile-photo {
         width: 150px;
-        height: 200px;
+        height: auto;
     }
 
     #prsnlname {
-        font-size: 32px;
+        font-size: 28px;
     }
 
     /* Form */
@@ -496,7 +523,7 @@ footer {
     }
 
     .social-links a {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .socialLinks {
