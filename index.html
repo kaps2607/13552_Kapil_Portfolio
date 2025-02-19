@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapil Lund | Portfolio</title>
+    <link rel="icon" href="https://img.icons8.com/cute-clipart/64/k.png">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="./scripts/script.js"></script>
+
+</head>
+<body>
+   <header>
+      <nav>
+          <div class="logo">Kapil Arjandas Lund <br>
+            <!-- <a href="mailto:kapillund29@gmail.com">kapillund29@gmail.com</a> -->
+        </div>
+          <ul class="nav-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
+      </nav>
+  </header>
+  
+  <section id="home" class="hero">
+    <div class="hero-content">
+        <div class="text">
+            <h1>Hello World,<br> I am <br><span id="prsnlname">Kapil Lund</span></h1>
+            <p>Full Stack Developer</p>
+        </div>
+        <img src="./resources/kapspp.png" alt="kapsphoto" class="profile-photo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjPiXs0yQYc6Dyb4BUYNfoqadXuTjFHIVCEA&s" alt="NeoSOFT Pvt. Ltd." id="neo">
+    </div>
+      
+  </section>
+  
+  <section id="about">
+      <h2>About Me</h2>
+      <p>I am Kapil Lund, an aspiring Full-Stack Developer skilled in Java, MySQL, and frontend technologies. Currently, I am mastering .NET Full-Stack Development to build scalable web applications. I hold a B.Sc. in IT from Vivekananda Education Society's College and have prior experience in customer support.</p>
+      <br><p>
+        I am working as a .NET Developer at Neosoft since January 2025, building web applications using Microsoft technologies.
+      </p>
+      <br><p>Add me on gmail: <a id="myemail" href="mailto:kapillund29@gmail.com" target="_blank">kapillund29@gmail.com</a></p>
+      <div class="socialLinks">
+        <a href="https://www.linkedin.com/in/kapil-lund" target="_blank" class="btn linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/kaps2607" target="_blank" class="btn github"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+      <a href="resources/Kapil_Lund_Profile.pdf" download="Kapil_Lund_Profile.pdf" class="btn"><i class="fas fa-download"></i> Get Resume</a>
+  </section>
+  
+  <section id="skills">
+      <h2>Skills</h2>
+      <div>
+        <h3>Tech Skills</h3>
+      <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>MySQL</li>
+          <li>Java</li>
+          <li>.NET</li>
+          <li>C#</li>
+      </ul></div>
+      <div>
+        <h3>Soft Skills</h3>
+        <ul>
+            <li>Versatility</li>
+            <li>Problem Solving</li>
+            <li>Time Management</li>
+            <li>Communication Skills</li>
+            <li>Active Listener</li>
+        </ul>
+      </div>
+  </section>
+  
+  <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-container">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>My portfolio website is a personal platform showcasing my skills, projects, and experience as a developer, providing an interactive and professional way for recruiters and clients to learn about my work.</p></div>
+        <br>
+        <div class="project-card"><h3>AdExcellence</h3>
+        <p>A web-based platform that connects advertisers with hoarding owners, streamlining outdoor ad bookings, campaign management, and real-time analytics with a secure and efficient backend.</p></div>
+        <div class="project-card">
+            <h3>Auction Hub</h3>
+            <p>It is a full-stack auction platform built with HTML, CSS, JavaScript, .NET, and MySQL. It offers a seamless user experience through efficient bidding and real-time updates, demonstrating expertise in both front-end and back-end development.</p>
+        </div>
+      
+    </div>
+  </section>
+  
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form" action="https://formspree.io/f/mnnjovdw" method="POST" onsubmit="handleSubmit(event)">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+    <p id="form-message"></p>
+</section>
+  
+  <footer>  
+    <a href="https://www.linkedin.com/in/kapil-lund" target="_blank">
+        <img width="40" height="40" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/>
+    </a>
+    <a href="https://github.com/kaps2607" target="_blank">
+        <img width="40" height="40" src="https://img.icons8.com/arcade/64/github.png" alt="github"/>
+    </a>
+    <a href="mailto:kapillund29@gmail.com" target="_blank">
+        <img width="40" height="40" src="https://img.icons8.com/clouds/100/gmail-new.png" alt="gmail-new"/>
+    </a>
+    <p>&copy; 2025 Kapil Lund. All Rights Reserved.</p>
+  </footer>
+
+  <script defer src="./scripts/script.js"></script>
+  <script>
+    function handleSubmit(event) {
+        event.preventDefault(); // Prevent default form submission
+    
+        let form = document.getElementById("contact-form");
+        let formMessage = document.getElementById("form-message");
+        
+        // Serialize form data
+        let formData = new FormData(form);
+    
+        fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: { "Accept": "application/json" }
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.ok) {
+                formMessage.innerHTML = "Thank you! Your message has been sent.";
+                formMessage.style.color = "green";
+                form.reset(); // Reset form fields
+            } else {
+                formMessage.innerHTML = "Oops! Something went wrong.";
+                formMessage.style.color = "red";
+            }
+        })
+        .catch(error => {
+            formMessage.innerHTML = "Error: Unable to send message.";
+            formMessage.style.color = "red";
+        });
+    }
+    </script>
+   
+    
+</body>
+</html>
