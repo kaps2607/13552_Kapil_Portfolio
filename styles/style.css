@@ -363,23 +363,6 @@ footer {
     color: #ffcc00;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .social-links {
-        flex-direction: column;
-        gap: 10px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    footer {
-        padding: 15px;
-    }
-    
-    .social-links a {
-        font-size: 20px;
-    }
-}
 
 .socialLinks .btn{
     display: inline-block;
