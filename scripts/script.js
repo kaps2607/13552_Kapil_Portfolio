@@ -156,7 +156,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     };
     
-    // Set initial state for animation
     const animatedElements = document.querySelectorAll('.about-content, .skills-container, .project-card, .resume-item, .contact-info, .contact-form');
     animatedElements.forEach(element => {
         element.style.opacity = '0';
